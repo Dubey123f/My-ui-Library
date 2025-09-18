@@ -1,7 +1,7 @@
 
-
+"use client";
 // export default UILibrary;
-import React, { useState, SetStateAction  } from 'react';
+import React, { useState } from 'react';
 import CodeBlock from './CodeBlock';
 import ColorChooser from './theme/ColorChooser';
 import Sidebar from './layout/Sidebar';
@@ -12,7 +12,8 @@ import Footer from './Footer/footer';
 import Mailbox from './mailbox/Mailbox'; 
 import DashboardLayout from './layout/DashboardLayout';
 import TooltipExample from './ToolTippp/TooltipExample';
-import ImageAccordion from './Accordion/ImgAcc';
+// import ImageAccordion from './component/Accordion/ImgAcc';
+import {ImageAccordion} from './Accordion/ImgAcc';
 
 
 import {

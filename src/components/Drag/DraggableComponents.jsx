@@ -239,7 +239,7 @@ const SortableItem = ({ id, content }) => {
 };
 
 const DroppableContainer = ({
-  id,
+  // id,
   items,
   title,
 }) => {

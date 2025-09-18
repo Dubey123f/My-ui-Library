@@ -26,3 +26,23 @@ body {
 body {
   @apply bg-black text-gray-300;
 }
+/* Add to your global CSS */
+.code-block {
+  position: relative;
+}
+
+.copy-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 4px 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.copy-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

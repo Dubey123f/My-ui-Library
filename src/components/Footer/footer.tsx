@@ -229,19 +229,19 @@ import React, { FormEvent, useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import Link from 'next/link';
 
-interface Variants {
-  visible: (i: number) => {
-    translateY: number;
-    transition: {
-      type: string;
-      stiffness: number;
-      damping: number;
-      duration: number;
-      delay: number;
-    };
-  };
-  hidden: { translateY: number };
-}
+// interface Variants {
+//   visible: (i: number) => {
+//     translateY: number;
+//     transition: {
+//       type: string;
+//       stiffness: number;
+//       damping: number;
+//       duration: number;
+//       delay: number;
+//     };
+//   };
+//   hidden: { translateY: number };
+// }
 
 // SVG paths...
 const pathArr: string[] = [
@@ -256,14 +256,14 @@ const pathArr: string[] = [
   'M775.138 110.619V126H700.166V114.092L747.517 55.3808H702.633V40H772.508V51.9077L724.17 110.619H775.138Z',
 ];
 
-interface SocialLink {
-  name: string;
-  url: string;
-}
+// interface SocialLink {
+//   name: string;
+//   url: string;
+// }
 
 const Footer = () => {
   const container = useRef<HTMLDivElement>(null);
-  const [openPopup, setOpenPopUp] = useState(false);
+  const [ setOpenPopUp] = useState(false);
   const ref = useRef(null);
   const isInView = useInView(ref);
 
@@ -294,10 +294,10 @@ const Footer = () => {
     }
 
     // Send email logic...
-    setOpenPopUp(true);
+    // setOpenPopUp(true);
     target.reset();
     setTimeout(() => {
-      setOpenPopUp(false);
+      // setOpenPopUp(false);
     }, 2000);
   };
 
